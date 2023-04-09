@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Siete segmantos</title>
+    <link rel="stylesheet" href="../css/estilos7segmentos.css">
+  </head>
+  <body>
+
+    <div class="contenedor">
+        <div class="logo">
+            <img src="../img/gorila-b.jpg">
+        </div> <!--.logo-->
+    </div> <!--.contenedor-->
+
+
+        <div class="navegacion">
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="../index.html">Inicio</a></li>
+
+                    <li><a href="#">Software</a>
+                          <ul>
+                            <li><a href="#">CCS compiler</a></li>
+                            <li><a href="#">Proteus</a></li>
+                            <li><a href="#">labVIEW</a></li>
+                            <li><a href="#">Android Studio</a></li>
+                          </ul>
+                    </li>
+
+                    <li><a href="objetivos.html">Objetivos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="contenido">
+          <main>
+            <article>
+
+              <h2> Display siete segmentos </h2>
+              <img src="../img/display7/disp-1.jpg" alt="Sensor De Temperatura LM35" >
+              <br> <br>
+              <p> El display 7 segmentos es un componente electrónico muy utilizado para representar visualmente números y letras, es de gran utilidad dado su simpleza para implementar en cualquier proyecto electrónico. </p>
+              <br>
+              <p> Esta compuesto por 7 dispositivos lumínicos (Led) que forman un “8”, de esta forma controlando el encendido y apagado de cada led, podremos representar el numero o letra que necesitamos.  </p>
+
+              <br>
+              <img src="../img/display7/disp-2.gif" alt="Sensor De Temperatura LM35" >
+              <br><br><br><br>
+              <h2> DISPLAY 7 SEGMENTOS, ANODO COMÚN Y CATODO COMÚN </h2>
+              <br>
+              <p> Existen dos tipos de display de 7 segmentos, su principal diferencia es la conexión que debemos implementar para encenderlos, estos dos tipos se conocen como Anodo común y Catodo común. </p>
+              <br>
+              <p> En los 7 segmentos de Cátodo Común, el punto circuital en común para todos los Led es el Cátodo (Gnd), cero volt, Mientras que el Ánodo común el punto de referencia es Vcc (5 volt). </p>
+              <br>
+              <p> Teniendo en cuenta estas consideraciones la forma de encender los led debe realizase de diferente manera en función de que elemento tengamos (Ánodo o Cátodo común). </p>
+              <br>
+              <p> Cada Led trabaja con tensiones y corrientes bajas por lo tanto se pueden conectar directamente a compuertas lógicas o pines de salida de un micro controlador, igualmente siempre es recomendable para aumentar la vida util de los mismos, conectarle una resistencia en serie entre el pin de salida del micro controlador y el de entrada del 7 segmentos, la intensidad lumínica en este caso dependerá del valor de la resistencia agregada. </p>
+              <br><br>
+            </article>
+
+            <h2>video </h2>
+            <video src="../img/videos/display7.mp4" height="400px" controls>video</video>
+
+          </main>
+        </div>
+
+        <footer>
+
+          <div class="contenedor">
+              <div class="nosotros">
+                  <h2>Sobre nosotros</h2>
+                  <p>
+                      Gorila pro es una targeta de desarrollo diseñada para todos los apasionados por la electronica, donde podran diseñar proyectos de prototipado rapido.
+                  </p>
+              </div>
+
+          </div>
+
+          <p class="copyright">
+              Creado por: Juan David Guzman Lopez
+          </p>
+        </footer>
+
+
+
+  </body>
+</html>

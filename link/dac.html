@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DAC</title>
+      <link rel="stylesheet" href="../css/estilosdac.css">
+  </head>
+  <body>
+
+    <div class="contenedor">
+        <div class="logo">
+            <img src="../img/gorila-b.jpg">
+        </div> <!--.logo-->
+    </div> <!--.contenedor-->
+
+
+        <div class="navegacion">
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="../index.html">Inicio</a></li>
+
+                    <li><a href="#">Software</a>
+                          <ul>
+                            <li><a href=" #">CCS compiler</a></li>
+                            <li><a href="#">Proteus</a></li>
+                            <li><a href="#">labVIEW</a></li>
+                            <li><a href="#">Android Studio</a></li>
+                          </ul>
+                    </li>
+
+                    <li><a href="#">Objetivos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="contenido" >
+          <main>
+            <article>
+
+              <h2> Driver l293d </h2>
+              <img src="../img/dac/dac-1.jpg" alt="Sensor De Temperatura LM35" >
+              <br> <br>
+              <p> MCP4725 IC es un módulo convertidor digital a analógico de 12 bits que se utiliza para generar voltajes analógicos de salida de (0 a 5V) y se controla mediante la comunicación I2C . También viene con EEPROM de memoria no volátil integrada. </p>
+              <p> Este IC tiene una resolución de 12 bits. Esto significa que usamos (0 a 4096) como entrada para proporcionar la salida de voltaje con respecto al voltaje de referencia. El voltaje de referencia máximo es de 5V. </p>
+              <br>
+            </article>
+              <img src="../img/dac/dac-2.jpg"  alt="Sensor De Temperatura LM35" >
+              <article>
+              <br>
+              <p> Este DAC IC puede interactuar con cualquier microcontrolador utilizando la comunicación I2C. La comunicación I2C requiere solo dos cables SCL y SDA. Por defecto, la dirección I2C para MCP4725 es 0x60 o 0x61 o 0x62. Para mí es 0x61. Usando el bus I2C podemos conectar múltiples MCP4725 DAC IC. Lo único es que necesitamos cambiar la dirección I2C del IC </p>
+              <br>
+              <p>Luego, ADC se usará para convertir el valor analógico en forma digital. Después de eso, esos valores digitales se envían a MCP4725 a través del bus I2C para convertirlos en señales analógicas utilizando el IC DAC MCP4725.</p>
+              <br><br>
+            </article>
+
+
+
+            <h2> link de descarga codigo de programacion y simulacion</h2>
+
+            <a  href="../archivos/L293D.rar"download><img src="../img/boton-descarga.png" height="80px"  ></a>
+          </main>
+
+          <aside class="sidebar">
+              <h2>Datasheet</h2>
+              <ul>
+                <li><a href="../pdf/MCP4725.pdf">MPC4725</a></li>
+              </ul>
+              <aside>
+
+
+        </div>
+
+        <footer>
+
+          <div class="contenedor">
+              <div class="nosotros">
+                  <h2>Sobre nosotros</h2>
+                  <p>
+                      Gorila pro es una targeta de desarrollo diseñada para todos los apasionados por la electronica, donde podran diseñar proyectos de prototipado rapido.
+                  </p>
+              </div>
+
+          </div>
+
+          <p class="copyright">
+              Creado por: Juan David Guzman Lopez
+          </p>
+        </footer>
+
+  </body>
+</html>
